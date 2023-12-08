@@ -14,6 +14,7 @@ public:
   uint64_t put(MultiBuf &buf) const;
   void tag(uint64_t blobid, rust::Str tag) const;
   BlobMetadata metadata(uint64_t blobid) const;
+  void invoke_crypto_test() const;
 
 private:
   class impl;
