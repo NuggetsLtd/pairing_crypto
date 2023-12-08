@@ -7,7 +7,7 @@ edition = "2021"
 
 [dependencies]
 cxx = "1.0.110"
-pairing_crypto = { path = "../../" }
+pairing_crypto = { path = "../../", version = "0.4.2" }
 
 [build-dependencies]
 cxx-build = "1.0"
