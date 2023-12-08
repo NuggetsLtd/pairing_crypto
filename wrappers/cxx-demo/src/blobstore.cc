@@ -46,7 +46,11 @@ uint64_t BlobstoreClient::put(MultiBuf &buf) const {
   return blobid;
 }
 
-void BlobstoreClient::invoke_crypto_test() const { crypto_test(); }
+void BlobstoreClient::invoke_crypto_test(
+    rust::Slice<const uint8_t> seed,
+    rust::Slice<const uint8_t> key_info) const {
+  crypto_test(seed, key_info);
+};
 
 // Add tag to an existing blob.
 void BlobstoreClient::tag(uint64_t blobid, rust::Str tag) const {
