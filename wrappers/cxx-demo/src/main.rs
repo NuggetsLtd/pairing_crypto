@@ -57,4 +57,3 @@ fn main() {
     let metadata = client.metadata(blobid);
     println!("tags = {:?}", metadata.tags);
 }
-
