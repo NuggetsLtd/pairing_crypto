@@ -63,7 +63,7 @@ name = "bbs_simple"
 members = [
     "tools/bbs-fixtures-generator",
     "tools/bbs-generators",
-    "wrappers/c",
+    "wrappers/c", "wrappers/cxx-demo",
     "wrappers/java/jni",
     "wrappers/wasm"
 ]
