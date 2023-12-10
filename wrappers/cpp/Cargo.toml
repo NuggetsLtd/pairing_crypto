@@ -1,5 +1,5 @@
 [package]
-name = "cxx-demo"
+name = "paring_crypto_cpp"
 version = "0.1.0"
 edition = "2021"
 

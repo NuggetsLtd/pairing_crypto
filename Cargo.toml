@@ -63,10 +63,14 @@ name = "bbs_simple"
 members = [
     "tools/bbs-fixtures-generator",
     "tools/bbs-generators",
-    "wrappers/c", "wrappers/cxx-demo",
+    "wrappers/c",
     "wrappers/java/jni",
     "wrappers/wasm"
 ]
+exclude = [
+    "wrappers/cpp"
+]
+
 
 [package.metadata.docs.rs]
 all-features = true

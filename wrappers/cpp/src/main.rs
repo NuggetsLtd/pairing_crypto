@@ -18,7 +18,7 @@ mod ffi {
 
     // C++ types and signatures exposed to Rust.
     unsafe extern "C++" {
-        include!("cxx-demo/include/blobstore.h");
+        include!("paring_crypto_cpp/include/blobstore.h");
 
         type BlobstoreClient;
 

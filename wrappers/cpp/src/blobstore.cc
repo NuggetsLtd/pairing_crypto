@@ -1,5 +1,5 @@
-#include "cxx-demo/include/blobstore.h"
-#include "cxx-demo/src/main.rs.h"
+#include "paring_crypto_cpp/include/blobstore.h"
+#include "paring_crypto_cpp/src/main.rs.h"
 #include <algorithm>
 #include <functional>
 #include <set>
