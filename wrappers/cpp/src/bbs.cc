@@ -1,4 +1,4 @@
-#include "paring_crypto_cpp/include/blobstore.h"
+#include "paring_crypto_cpp/include/bbs.h"
 #include "paring_crypto_cpp/src/main.rs.h"
 #include <algorithm>
 #include <functional>
