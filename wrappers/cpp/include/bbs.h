@@ -4,7 +4,7 @@
 #include <memory>
 
 namespace org {
-namespace blobstore {
+namespace bbs {
 
 struct MultiBuf;
 struct BlobMetadata;
@@ -25,5 +25,5 @@ private:
 
 std::unique_ptr<BlobstoreClient> new_blobstore_client();
 
-} // namespace blobstore
+} // namespace bbs
 } // namespace org

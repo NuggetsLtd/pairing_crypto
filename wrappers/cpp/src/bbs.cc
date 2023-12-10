@@ -7,7 +7,7 @@
 #include <unordered_map>
 
 namespace org {
-namespace blobstore {
+namespace bbs {
 
 // Toy implementation of an in-memory blobstore.
 //
@@ -73,5 +73,5 @@ std::unique_ptr<BlobstoreClient> new_blobstore_client() {
   return std::make_unique<BlobstoreClient>();
 }
 
-} // namespace blobstore
+} // namespace bbs
 } // namespace org

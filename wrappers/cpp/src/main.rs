@@ -1,6 +1,6 @@
 use pairing_crypto::bbs_bound::ciphersuites::bls12_381_bbs_g1_bls_sig_g2_sha_256::BbsKeyPair;
 
-#[cxx::bridge(namespace = "org::blobstore")]
+#[cxx::bridge(namespace = "org::bbs")]
 mod ffi {
     // Shared structs with fields visible to both languages.
     struct BlobMetadata {
