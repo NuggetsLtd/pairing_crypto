@@ -27,6 +27,7 @@ mod macros;
 
 /// FFI interface exposed by this crate
 pub mod bbs;
+pub mod stub;
 
 /// Domain Transfer Objects used over the FFI interface exposed by this crate
 pub mod dtos;

@@ -12,7 +12,7 @@
  */
 import R from 'ramda';
 import { Buffer } from 'buffer';
-import { BbsVerifyResult, bbs } from '@mattrglobal/pairing-crypto-rn';
+import { BbsVerifyResult, bbs, stub } from '@mattrglobal/pairing-crypto-rn';
 
 import { FixtureItem, SignatureFixture, ProofFixture, fixtures } from '../__fixtures__';
 
@@ -180,4 +180,8 @@ export const BbsBls12381Shake256ProofVerify = async (fixture: FixtureItem<ProofF
       : undefined,
     proof: convert.byteArrayFromHex(fixture.value.proof),
   });
+};
+
+export const StubFunctionsAdd = async (): Promise<void> => {
+  return await stub.functions.add();
 };

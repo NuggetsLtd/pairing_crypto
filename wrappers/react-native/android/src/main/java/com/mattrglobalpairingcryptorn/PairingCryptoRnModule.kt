@@ -2,6 +2,7 @@ package com.mattrglobalpairingcryptorn
 
 import pairing_crypto.Bls12381Sha256
 import pairing_crypto.Bls12381Shake256
+import pairing_crypto.Stub
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.ReactContextBaseJavaModule
 import com.facebook.react.bridge.ReactMethod
@@ -336,6 +337,20 @@ class PairingCryptoRnModule(reactContext: ReactApplicationContext) : ReactContex
       var proof = cipherSuite.createProof(publicKey, header, presentationHeader, signature, verifySignature, disclosedIndices, messages)
 
       promise.resolve(proof.toReadableArray())
+    } catch (exception: Exception) {
+      promise.reject(exception)
+    }
+  }
+
+  @ReactMethod
+  fun harry_add( promise: Promise) {
+
+    try {
+      var myNative = Stub();
+      var res: Long =  myNative.addw(1 , 5)
+      var res_d: Double = res.toDouble(); // just convert as rn doesn't support 'long'
+      promise.resolve(res_d);
+
     } catch (exception: Exception) {
       promise.reject(exception)
     }

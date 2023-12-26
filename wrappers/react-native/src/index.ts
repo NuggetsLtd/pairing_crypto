@@ -12,6 +12,7 @@
  */
 
 import { bls12381Sha256, bls12381Shake256 } from './bbs';
+import { functions } from './stub';
 
 export * from './types';
 
@@ -41,5 +42,11 @@ export const bbs = {
     verify: bls12381Shake256.verify,
     deriveProof: bls12381Shake256.proofGen,
     verifyProof: bls12381Shake256.proofVerify,
+  },
+};
+
+export const stub = {
+  functions: {
+    add: functions.add,
   },
 };
